@@ -1,0 +1,31 @@
+body {
+    background-color: oklch(26.9% 0 0);
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    /* row-gap: 10px; */
+    /* column-gap: 30px; */
+    height: 600px;
+    /* flex-flow: column wrap; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+    background-color: oklch(54.1% 0.281 293.009);
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: oklch(78.9% 0.154 211.53);
+}
+
+.item-3 {
+    /* align-self: flex-end; */
+    order: 2;
+}
+
+.item-6 {
+    order: 3;
+}
