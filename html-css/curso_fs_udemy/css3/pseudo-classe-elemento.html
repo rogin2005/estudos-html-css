@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe e pseudo-elemento</title>
+
+    <style>
+
+        /* Pseudo-classe 
+        a:hover {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        } */
+
+        /* Links */
+        a, a:link {
+            text-decoration: none;
+            color: green;
+            padding: 0.5em 1em;
+        }
+
+        /* Links não visitados 
+        a:link {
+            color: grey;
+        } */
+
+        /* Links visitados 
+        a:visited {
+            color: red;
+        } */
+
+        /* Links hover, passo o cursor sobre o link */
+        a:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* Links ativos */
+        a:active {
+            background-color: purple;
+        }
+
+        /* Formulários */
+        input:checked {
+            margin-left: 20px;
+        }
+
+        /* Foco no elemento */
+        input:focus {
+            background-color: purple;
+            color: white;
+        }
+
+        /* Elemento requerido/obrigatorio */
+        input:required {
+            border: 2px solid red;
+        }
+
+
+        /* Pseudo-elementos */
+
+        /* Formatação da primeira linha apenas */
+        p::first-line {
+            color: red;
+        }
+
+        /* Formata só a primeira letra */
+        p::first-letter {
+            font-size: 3em;
+            color: purple;
+        }
+        
+        /* Seleção de texto formatada ao inves do azul padrão do navegador, tipo como um marcador */
+        p::selection {
+            background-color: yellow;
+        }
+
+        /* Antes */
+        h2::before {
+            content: "{";
+            color: red;
+        }
+
+        /* Depois */
+        h2::after {
+            content: "}";
+            color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        Conteúdo da DIV
+    </div>
+
+    <h2>Conteúdo do h2</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veritatis, laboriosam nostrum ullam distinctio magnam repellat suscipit sint maiores labore itaque nulla necessitatibus vero voluptate sed numquam, deserunt nesciunt similique!
+    </p>
+
+    <a href="https://www.google.com/">Google</a> | 
+    <a href="https://www.youtube.com/">Youtube</a> | 
+    <a href="https://www.github.com/">Github</a>
+
+    <h2>Formulário</h2>
+    <input type="checkbox" name="aceito"> aceito <br>
+    <input type="radio" name="opcao" id="opcao"> Sim <br>
+    <input type="radio" name="opcao" id="opcao"> não <br>
+    <input type="text" required placeholder="Digite seu nome">
+    <input type="text" placeholder="Digite seu telefone">
+
+</body>
+</html>
