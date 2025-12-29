@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+
+    <style>
+
+        .caixa {
+            width: 700px;
+            height: 300px;
+            border: 3px dotted red;
+
+            /* background-color: lightgreen;
+            background-image: url('img/fundo-css-escuro.png'); */
+
+            /* 
+            repeat (padrão) -> é repetida horizontal e vertical
+            repeat-x -> é repetida da horizontal
+            repeat-y -> é repetida na vertical
+            no-repeat -> imagem é exibida apenas uma vez
+            
+
+            background-repeat: no-repeat; */
+
+            /* 
+            fixed -> a imagem de fundo permanece na mesma posição na página
+            scroll (padrão) -> a imagem de fundo move-se com o conteúdo quando o usuario rola a página
+            
+
+            background-attachment: scroll; */
+
+            /* 
+            Quando a imagem não é repetida, você pode posicionar a imagem 
+            horizontal: left(esquerda), center(centro), right(direita)
+            vertical: top(topo), center(centro), bottom(rodapé)
+            * Necessário escolher dois valores, senão será utilzado center como segundo valor
+            * config padrão: left top
+            
+            background-position:  right top; 
+            background-position-x: right;
+            background-position-y: bottom;
+            */
+
+            /* 
+            Todas as propriedades resumidas
+            ordem: cor, imagem, repeat, attachment, position
+            
+            background: lightgreen 
+                        url(img/fundo-css-escuro.png)
+                        no-repeat
+                        fixed
+                        left; */
+
+            /* a primeira imagem definida em cima é que vai ficar sobre outras */
+            background: url(img/fundo-css-escuro.png) no-repeat right bottom,
+            url(img/fundo-css-claro.png) no-repeat right;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="caixa">
+        <h1>Título do texto</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor culpa praesentium aliquam, optio neque quae ratione impedit reprehenderit ad, quam saepe atque? At, modi voluptatum libero illo consectetur temporibus!
+        </p>
+    </div>
+
+</body>
+</html>

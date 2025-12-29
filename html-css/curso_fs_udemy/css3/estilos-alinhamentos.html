@@ -40,6 +40,24 @@
             text-decoration: none;
         }
 
+        .entrelinhas {
+            border: 1px solid red;
+            line-height: 2em; /* Altura da linha */
+        }
+
+        .espacamento {
+            letter-spacing: 0; /* Espaçamento entre letras */
+            word-spacing: 0.6em; /* Espaçamento entre palavras */
+        }
+
+        .recuo {
+            text-indent: 2em; /* recuo/paragrafo do texto, pra todas essas propriedades podemos tbm usar valores negativos */
+        }
+
+        .alinhamento {
+            /* text-align: padrão(left), right, center, justify */
+            text-align: justify;
+        }
         
 
     </style>
@@ -55,7 +73,20 @@
 
     <a href="">Roger</a>
 
+    <p class="entrelinhas">Texto entrelinhas</p>
+    
+    <p class="espacamento">Texto com espaço entre letras e palavras</p>
+
+    <p class="recuo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id quod qui, earum molestiae praesentium rem voluptates laboriosam. Rem distinctio consequatur quisquam maiores voluptatibus id accusamus neque dolores aperiam doloremque.
+    </p>
+
     <p>Texto normal</p>
+
+    <h1>Alinhamentos de textos</h1>
+    <p class="alinhamento">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id quod qui, earum molestiae praesentium rem voluptates laboriosam. Rem distinctio consequatur quisquam maiores voluptatibus id accusamus neque dolores aperiam doloremque.
+    </p>
     
 </body>
 </html>
