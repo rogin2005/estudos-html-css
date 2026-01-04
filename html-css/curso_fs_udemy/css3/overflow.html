@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow e dimensões de caixa</title>
+
+    <style>
+
+        .caixa {
+            /* width: 600px;
+            height: 300px; 
+            min-width: 500px;  Largura minima 
+            max-width: 600px;  Largura máxima 
+            min-height: 200px;
+            max-height: 600px;
+            */
+            width: 600px;
+            height: 300px;
+            border: 1px solid red;
+            background-color: lightgray;
+            /* 
+            (padrão)visible: Exibe o conteudo de forma vazada,
+            fora da caixa de conteúdo
+            hidden: Esconde o conteudo excedente
+            scroll: Sempre exibe barras de rolagem
+            auto: adiciona scroll somente se necessário
+            
+            overflow: scroll; */
+            overflow-x: hidden; /* Horizontal */
+            overflow-y: auto; /* Vertical */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="caixa">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque est totam voluptatibus omnis asperiores, rerum autem, dicta hic a nostrum vero earum, porro rem veritatis? Commodi a illum enim.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque est totam voluptatibus omnis asperiores, rerum autem, dicta hic a nostrum vero earum, porro rem veritatis? Commodi a illum enim.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque est totam voluptatibus omnis asperiores, rerum autem, dicta hic a nostrum vero earum, porro rem veritatis? Commodi a illum enim.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque est totam voluptatibus omnis asperiores, rerum autem, dicta hic a nostrum vero earum, porro rem veritatis? Commodi a illum enim.
+        </p>
+        <p>
+            ROGER Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque est totam voluptatibus omnis asperiores, rerum autem, dicta hic a nostrum vero earum, porro rem veritatis? Commodi a illum enim.
+        </p>
+    </div>
+
+</body>
+</html>

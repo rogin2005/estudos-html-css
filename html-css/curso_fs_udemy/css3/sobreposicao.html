@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreposição de elementos</title>
+    
+    <style>
+
+        /* .caixa1 {
+            border: 1px solid blue;
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 90px;
+            left: 90px;
+            z-index: 1000;
+        }
+
+        .caixa2 {
+            border: 1px solid red;
+            background-color: lightcoral;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 80px;
+            left: 80px;
+        }
+
+        .caixa3 {
+            border: 1px solid green;
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            top: 160px;
+            left: 160px;
+            z-index: -1;
+        } */
+
+        .caixa {
+            background-color: purple;
+            width: 100%;
+            position: relative;
+        }
+
+        .destaque {
+            background-color: orange;
+            color: white;
+            width: 150px;
+            text-align: center;
+            border-radius: 50px;
+            padding: 10px;
+            position: absolute;
+            bottom: 2.5em;
+        }
+
+        .promocao {
+            background-color: white;
+            color: purple;
+            border: 3px dotted purple;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 1em;
+            text-align: center;
+            position: absolute;
+            bottom: -1.8em;
+            left: 10%;
+            right: 10%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Exercício</h1>
+    <div class="caixa">
+
+        <img src="img/banner.png" alt="banner" width="700">
+
+        <div class="destaque">
+            Tempo limitado
+        </div>
+
+        <div class="promocao">
+            Quero a promoção
+        </div>
+
+    </div>
+
+    <!-- <div class="caixa1">
+        caixa 1
+    </div>
+
+    <div class="caixa2">
+        caixa 2
+    </div>
+
+    <div class="caixa3">
+        caixa 3
+    </div> -->
+    
+</body>
+</html>
