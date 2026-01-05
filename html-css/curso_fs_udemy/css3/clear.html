@@ -11,6 +11,14 @@
             width: 920px;
             margin: 0 auto;
             border: 1px solid red;
+            background-color: orange;
+        }
+
+        #principal::after {
+            content: " ";
+            clear: both;
+            display: table;
+            border: 1px solid red;
         }
 
         #rodape {
@@ -32,12 +40,14 @@
             border: 1px solid gray;
             padding: 0.5em;
             background-color: white;
-            width: 200px;
-            float: right;
         }
 
         .limpar {
-            clear: left;
+            clear: both;
+        }
+
+        span, h3 {
+            border: 1px solid red;
         }
 
     </style>
@@ -47,23 +57,22 @@
 
     <div id="principal">
 
-        <img class="item-galeria" src="img/celular1.png" alt="">
+        <!-- <img class="item-galeria" width="200" style="float: left;" src="img/celular1.png" alt="">
+        <img class="item-galeria" width="300" style="float: right;" src="img/celular2.png" alt="">
 
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem ab accusamus illum totam, porro sed, dolore commodi officiis, quas nobis quae atque consequatur natus consequuntur maxime quam voluptates eveniet.
-        </p>
+        </p>c
 
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem ab accusamus illum totam, porro sed, dolore commodi officiis, quas nobis quae atque consequatur natus consequuntur maxime quam voluptates eveniet.
-        </p>
-
-        <p class="limpar">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem ab accusamus illum totam, porro sed, dolore commodi officiis, quas nobis quae atque consequatur natus consequuntur maxime quam voluptates eveniet.
-        </p>
+        </p> -->
 
 
 
-        <!-- <div class="noticia">
+
+
+         <div class="noticia">
             <h2>Lorem ipsum dolor sit amet 1</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt architecto minus culpa dolor ipsa blanditiis
@@ -73,7 +82,7 @@
         <div class="noticia">
             <h2>Lorem ipsum dolor sit amet 1</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt architecto minus culpa dolor ipsa blanditiis
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt architecto minus culpa dolor ipsa blanditiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ratione? Earum, qui quia autem quo, esse blanditiis doloremque est minima dolores ut laboriosam laudantium reprehenderit. Adipisci eaque tempora voluptatem tempore!
             </p>
         </div>
 
@@ -82,13 +91,15 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt architecto minus culpa dolor ipsa blanditiis
             </p>
-        </div> -->
+        </div> 
 
     </div>
 
-    <!-- <div id="rodape">
+    <div id="rodape">
         <h3>Todos os direitos reservados</h3>
-    </div> -->
+        <span>conteudo de teste</span>
+        <span>conteudo de teste 2</span>
+    </div> 
 
 </body>
 </html>
