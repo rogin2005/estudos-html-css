@@ -20,15 +20,44 @@
             row-gap: 20px;
             column-gap: 20px;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-template-areas: 
-                'cabecalho cabecalho'
-                'navegacao principal'
-                'rodape rodape'
+                'cabecalho'
+                'navegacao'
+                'principal'
+                'rodape'
             ;
+            
         }
 
+        /* celular, tablet, notebook 
+        0 até 600px
+        min-width 600 até 1200
+        min-width 1200
+        */
+        @media (min-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas: 
+                    'cabecalho cabecalho'
+                    'navegacao principal'
+                    'rodape rodape'
+                ;
+            }
+        }
 
+        @media (min-width: 1200px) {
+            .grid {
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas: 
+                    'cabecalho cabecalho'
+                    'navegacao principal'
+                    'navegacao rodape'
+                ;
+            }
+        }
+
+        
         header, nav, main, footer {
             /* padding: 3rem; */
             border: 5px solid aqua;
@@ -54,7 +83,7 @@
     
     <div class="grid">
         <header>Cabeçalho</header>
-        <nav>home | produtos | login | Cadastro</nav>
+        <nav>menu de navegação</nav>
         <main>
             <h2>Conteudo do sistema</h2>
             <p>
